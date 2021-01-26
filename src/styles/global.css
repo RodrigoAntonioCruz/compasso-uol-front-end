@@ -2084,9 +2084,15 @@ p {
 }
 
 
-@media only screen and (max-width: 767px) {
-  .input-profiles {
-    margin-left: 5%!important;
+ @media only screen and (max-width: 767px) {
+  .input-github {
+    width: 200%!important;
+  }
+}
+
+ @media only screen and (max-width: 575px) {
+  .input-github {
+    width: auto!important;
   }
 }
 
@@ -2124,7 +2130,7 @@ p {
   color: #adb5bd;
   cursor:pointer;
   text-decoration:none!important;
-  margin-left:-10px;
+  margin-left:-15px;
 }
 
 .btnStars{

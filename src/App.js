@@ -51,6 +51,12 @@ class App extends Component {
     this.setState({ nomePesquisa: e.target.value });
   }
   
+  // AO CLICAR NA LUPA FAZ A BUSCA
+  onSubmitHandler = (e)=>{     
+    e.preventDefault()
+    this.search(this.state.nomePesquisa)
+  }
+  
   // AO CLICAR ENTER FAZ A BUSCA
   onKeyPressHandler = (e)=>{
     if (e.keyCode === 13) {
@@ -90,10 +96,10 @@ class App extends Component {
                           <div className="text-muted text-center mt-2 mb-3">
                             <div className="navbar-search navbar-search-dark form-inline">
                               <div className="form-group col-md-12">
-                                <div className="input-group input-group-alternative col-md-12">
-                                  <div className="input-group-prepend">
+                                <div className="input-group input-group-alternative col-md-12 input-github">
+                                  <div className="input-group-prepend ">
                                     <span className="input-group-text">
-                                      <button className="btnSearchGitHub">
+                                      <button className="btnSearchGitHub" onClick={this.onSubmitHandler}>
                                         <i className="fas fa-search"></i>
                                       </button>
                                       </span>
@@ -204,6 +210,16 @@ class App extends Component {
          </div>
         )
       }
+
+       <footer className="footer">
+	    <div className="align-items-center justify-content-xl-between">
+	      <div className="col-xl-6 m-auto text-center">
+	        <div className="copyright">
+	          <p>&copy; Desenvolvido por <a href="https://rodrigodacruz.com.br" target="_blank" rel="noopener noreferrer">Rodrigo da Cruz</a></p>
+	        </div>
+	      </div>
+	    </div>
+	  </footer>
     </div>
     );
   };
