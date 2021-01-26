@@ -9,11 +9,13 @@
 
 ## Contexto do Desafio
 
-Criar uma aplicação utilizando a api do GITHUB https://developer.github.com/v3/ consumindo os seguintes endpoints:
+Criar uma aplicação web utilizando a api do GITHUB `https://developer.github.com/v3/` consumindo os seguintes endpoints:
 
-Endpoint user: https://api.github.com/users/USER_GITHUB
-Endpoint repos: https://api.github.com/users/USER_GITHUB/repos
-Endpoint starred: https://api.github.com/users/USER_GITHUB/starred{/owner}{/repo}
+`Endpoint user: https://api.github.com/users/USER_GITHUB`
+
+`Endpoint repos: https://api.github.com/users/USER_GITHUB/repos`
+
+`Endpoint starred: https://api.github.com/users/USER_GITHUB/starred{/owner}{/repo}`
 
 
 <h4>Technologies used</h4>
@@ -33,7 +35,7 @@ Endpoint starred: https://api.github.com/users/USER_GITHUB/starred{/owner}{/repo
 2. Instale <a href="https://git-scm.com/" target="_blank" alt="Git">Git</a> Stable version
 
 
-### Para instalar siga 
+### Instalando
 
 1. Clone ou baixe o projeto do repositório para o seu computador.
 
