@@ -18,7 +18,7 @@ Criar uma aplicação web utilizando a api do GITHUB `https://developer.github.c
 `Endpoint starred: https://api.github.com/users/USER_GITHUB/starred{/owner}{/repo}`
 
 
-<h4>Technologies used</h4>
+<h4>Tecnologias Usadas</h4>
 <ul>
   <li> HTML5
   <li> CSS3 
