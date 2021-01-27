@@ -30,9 +30,9 @@ Criar uma aplicação web utilizando a api do GITHUB `https://developer.github.c
 
 ### Requisitos de instalação para o seu ambiente 
 
-1. Instale <a href="https://nodejs.org/en/download/" target="_blank" alt="NodeJS">Node.js</a> LTS version
+1. Instale <a href="https://nodejs.org/en/download/" target="_blank" alt="NodeJS">Node.js</a> LTS
 
-2. Instale <a href="https://git-scm.com/" target="_blank" alt="Git">Git</a> Stable version
+2. Instale <a href="https://git-scm.com/" target="_blank" alt="Git">Git</a>
 
 
 ### Instalando
