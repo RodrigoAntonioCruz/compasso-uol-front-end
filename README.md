@@ -2,12 +2,12 @@
   <img align="center" alt="Logo UOL" src="https://githubfinder.compasso.rodrigodacruz.com.br/static/LogoUol.png" />
 </p>
 
-<h3 align="center">
-  Desafio FrontEnd Compasso UOL
-</h3>
+<h2 align="center">
+  DESAFIO FRONTEND COMPASSO UOL
+</h2>
 
 
-## Contexto do Desafio
+### Contexto do Desafio
 
 Criar uma aplicação web utilizando a api do GITHUB `https://developer.github.com/v3/` consumindo os seguintes endpoints:
 
