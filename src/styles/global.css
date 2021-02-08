@@ -1020,7 +1020,7 @@ textarea.form-control {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  border: 1px solid rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .12);
   border-radius: .375rem;
   background-color: #fff;
   background-clip: border-box;
@@ -1039,7 +1039,7 @@ textarea.form-control {
 .card-header {
   margin-bottom: 0;
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, .10);
   background-color: #fff;
 }
 

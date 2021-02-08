@@ -7,42 +7,41 @@ class App extends Component {
   state = {
     repositorios: [],
     usuario: "",
-    nomePesquisa:""
+    nomePesquisa:"",
+    titulo:"Repositórios"
   }
  
   // PESQUISA POR USUÁRIO
   search = (e) => {
-    api.get('/users/'+e+'/repos')
+    api.get(`/users/${e}`)
         .then(res => {
-        this.setState({ repositorios: res.data });
+        this.setState({ usuario: res.data });
+          api.get(`/users/${e}/repos`)
+             .then(res => {
+         this.setState({ repositorios: res.data });
+           })
         })
         .catch(error => {
-        console.log("")
-    });
-    
-    api.get('/users/'+e)
-        .then(res => {
-        this.setState({ usuario: res.data }); 
-        })
-        .catch(error => {
-      alert("Usuário não encontrado!")
+      alert("Usuário não encontrado!");
     });
    this.clearForm();
   }
   
   //PEGA OS REPOS MAIS VISITADOS
   starred = () => {
-    api.get('/users/' + this.state.usuario.login + '/starred')
+    api.get(`/users/${this.state.usuario.login}/starred`)
         .then(res => {
     this.setState({ repositorios: res.data });
+    this.setState({ titulo: "Mais acessados" });
     });
   } 
 
   // PEGA OS REPOS
   repos = (e) => {
-    api.get('/users/' + this.state.usuario.login + '/repos')
+    api.get(`/users/${this.state.usuario.login}/repos`)
         .then(res => {
     this.setState({ repositorios: res.data });
+    this.setState({ titulo: "Repositórios" });
     });
   }
  
@@ -75,6 +74,7 @@ class App extends Component {
 
     const { repositorios } = this.state;
     const { usuario } = this.state;
+    const { titulo } = this.state;
 
     return (
         <div className="main-content">
@@ -179,7 +179,7 @@ class App extends Component {
                     <div className="card-header bg-white border-0">
                       <div className="row align-items-center">
                         <div className="col-8">
-                          <h3 className="mb-0">Repositórios </h3> 
+                          <h3 className="mb-0">{titulo}</h3> 
                       </div>
                     </div>
                   </div>
@@ -203,15 +203,13 @@ class App extends Component {
     			            </div>
     		            </div>
     		          ))}
-
               </div>
             </div>
           </div>
          </div>
-        )
-      }
+        )}
 
-       <footer className="footer">
+    <footer className="footer">
 	    <div className="align-items-center justify-content-xl-between">
 	      <div className="col-xl-6 m-auto text-center">
 	        <div className="copyright">
