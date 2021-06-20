@@ -52,7 +52,7 @@ Criar uma aplicação web utilizando a api do GITHUB `https://developer.github.c
 #### Captura de tela do desktop
 
 <p align="center">
-  <img align="center" target="_blank" alt="Desktop screen capture" src="https://raw.githubusercontent.com/RodrigoAntonioCruz/assets/main/screen-4.png"/>
+  <img align="center" target="_blank" alt="Desktop screen capture" src="https://raw.githubusercontent.com/RodrigoAntonioCruz/assets/main/screen-5.png"/>
 </p>
 
 
