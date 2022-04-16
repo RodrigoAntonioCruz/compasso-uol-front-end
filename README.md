@@ -1,7 +1,7 @@
-<h2 align="center">
+<h3 align="center">
   <img align="center" alt="Logo UOL"  height="100" src="https://webjump.com.br/wp-content/uploads/2021/08/compassuol-logo-min.png" /><br>
   DESAFIO FRONTEND COMPASSO UOL
-</h2>
+</h3>
 
 
 ### Contexto do Desafio
